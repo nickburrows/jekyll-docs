@@ -49,7 +49,7 @@ jobs:
           bundle exec jekyll build
         env:
           JEKYLL_ENV: production
-          PAGES_REPO_NWO: nickburrows/jekyll-docs
+          PAGES_REPO_NWO: ${{ github.repository }}
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
